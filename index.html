@@ -13,6 +13,9 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
 </head>
 
 <body>
@@ -30,16 +33,25 @@
     <div class="container">
         <section>
             <h2>About</h2>
-            <h3>自己紹介</h3>
-            <p>麻生 宗幹</p>
-            <p>神奈川県横浜市出身。ユナイテッド株式会社へ2016年4月に入社。</p>
-            <p>現在は、研修で<span class="red">Ruby on Rails</span>の勉強をしています。</p>
-            <p>私のポートフォリオを見て気になった方は、<a href="contact.html">Contact</a>よりご連絡お願い致します。</p>
-            <h3>リンク</h3>
-            <ul>
-                <li><a href="https://github.com/muneki-aso" target="blank">GitHub</a></li>
-                <li><a href="https://www.facebook.com/muneki.aso" target="blank">Facebook</a></li>
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1" data-toggle="tab">Profile</a></li>
+                <li><a href="#tab2" data-toggle="tab">Links</a></li>
             </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="tab1">
+                    <p>麻生 宗幹</p>
+                    <p>神奈川県横浜市出身。ユナイテッド株式会社へ2016年4月に入社。</p>
+                    <p>現在は、研修で<span class="red">Ruby on Rails</span>の勉強をしています。</p>
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                    <div class="row col-sm-offset-2 col-sm-10">
+                        <a href="https://github.com/muneki-aso" target="blank" class="btn btn-default btn-primary">GitHub</a>
+                        <a href="https://www.facebook.com/muneki.aso" target="blank" class="btn btn-default btn-primary">Facebook</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <p>&copy; 2016 Muneki Aso.</p>
